@@ -1,0 +1,16 @@
+{
+  "name": "agri-advisor-root",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently --names \"SERVER,CLIENT\" --prefix-colors \"green,cyan\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && node --watch server.js",
+    "dev:client": "cd client && npx vite",
+    "build": "cd client && npm run build",
+    "start:server": "cd server && node server.js",
+    "start": "cd server && node server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

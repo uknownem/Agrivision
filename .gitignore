@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnpm-store
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+server/.env
+client/.env
+
+# Build output
+dist/
+build/
+*.log
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Scratch & temp
+scratch/
